@@ -1,0 +1,9 @@
+local WheelSpeed = 250
+for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
+if v.Name == "Motor"
+or v.Name == "BoatMotor"
+or v.Name == "FrontWheel"
+or v.Name == "BackWheel" then
+v.MaxSpeed.Value = WheelSpeed
+end
+end
