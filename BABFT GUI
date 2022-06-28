@@ -23,7 +23,11 @@ Callback = function()
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/MaxImOriginal/SomeRobloxShit/main/WinterChestFarm"),true))()
 end})
 
-
+FarmingSection:AddButton({
+Name = "Gold Auto-Farm",
+Callback = function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/MaxImOriginal/SomeRobloxShit/main/BABFT%20AutoFarm-by-TO4HOHEDAYH%235386"),true))()
+end})
 
 
 
