@@ -1,0 +1,5 @@
+local args = {
+    [1] = 101
+}
+
+workspace.QuestMakerEvent:FireServer(unpack(args))
