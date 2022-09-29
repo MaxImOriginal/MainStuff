@@ -1,0 +1,7 @@
+local args = {
+    [1] = "DNE5NFI49JFWJ29"
+}
+
+game:GetService("ReplicatedStorage").Remote.BombPlant:FireServer(unpack(args))
+wait(3)
+game:GetService("ReplicatedStorage").Remote.Defused:FireServer()
