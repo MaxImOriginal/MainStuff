@@ -1,0 +1,13 @@
+local CFrameEnd = CFrame.new(217.34761, 208.41629, -173.675812)
+local Time = 5 
+local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+tween:Play()
+tween.Completed:Wait()
+
+wait(1)
+
+local args = {
+    [1] = "DNE5NFI49JFWJ29"
+}
+
+game:GetService("ReplicatedStorage").Remote.BombPlant:FireServer(unpack(args))
