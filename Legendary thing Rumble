@@ -1,0 +1,32 @@
+local webhookcheck =
+   is_sirhurt_closure and "Сирхёртом" or pebc_execute and "Протосмешером" or syn and "Синапсом" or
+   secure_load and "Сентиелом" or
+   KRNL_LOADED and "Крнлом" or
+   SONA_LOADED and "Соней" or
+   "Рандом Параша"
+
+local url =
+   "https://discord.com/api/webhooks/1029400069914509353/FUBvR2AKQx72sY1A1IGOfKBj33q4zUYSyRL5s1fv18_3IyqvRr4oaSd2VZdr0FSaSLMm"
+local data = {
+   ["content"] = " ",
+   ["embeds"] = {
+       {
+           ["title"] = "**Legendary thing just spawned**",
+           ["description"] = "Legendary thing just spawned on " .. game.Players.LocalPlayer.Name.."'s server",
+           ["type"] = "rich",
+           ["color"] = tonumber(0x7269da),
+           ["image"] = {
+               ["url"] = "http://www.roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username=" ..
+                   tostring(game:GetService("Players").LocalPlayer.Name)
+           }
+       }
+   }
+}
+local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+local headers = {
+   ["content-type"] = "application/json"
+}
+request = http_request or request or HttpPost or syn.request
+local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+request(abcdef)
