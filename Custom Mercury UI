@@ -430,7 +430,7 @@ function Library:create(options)
 		self.darken, self.lighten = self.lighten, self.darken
 	end
 
-	self.CurrentTheme = options.Theme
+	self.CurrentTheme = Aqua
 
 	local gui = self:object("ScreenGui", {
 		Parent = (RunService:IsStudio() and LocalPlayer.PlayerGui) or game:GetService("CoreGui"),
