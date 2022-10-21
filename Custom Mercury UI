@@ -69,7 +69,7 @@ local Library = {
 		StrongText = {},
 		WeakText = {}
 	},
-	WelcomeText = go fuck ur self,
+	WelcomeText = nil,
 	DisplayName = nil,
 	DragSpeed = 0.06,
 	LockDragging = false,
