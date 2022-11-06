@@ -19,11 +19,21 @@ local Misc = tab1.new("folder", {
 
 
 local button1 = Misc.new("button", {
-    text = "Become ",
+    text = "Turn Fugitive Team Button Visible ",
 })
 button1.event:Connect(function()
-    print("Escaped!")
+    game:GetService("Players").LocalPlayer.PlayerGui.TeamChangeFugitive.Frame.Visible = true
+    print("Done!")
 end)
+
+local button2 = Misc.new("button", {
+    text = "Escape Prison",
+})
+button2.event:Connect(function()
+    game:GetService("Players").LocalPlayer.PlayerGui.TeamChangeFugitive.Frame.Visible = true
+    print("Done!")
+end)
+
 
 
 local dropdown1 = tab1.new("dropdown", {
