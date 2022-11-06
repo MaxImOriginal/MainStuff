@@ -1,0 +1,81 @@
+local engine = loadstring(game:HttpGet("https://raw.githubusercontent.com/Singularity5490/rbimgui-2/main/rbimgui-2.lua"))()
+
+
+local window1 = engine.new({
+    text = "NN Hub",
+    size = UDim2.new(300, 200),
+})
+
+window1.open()
+
+local tab1 = window1.new({
+    text = "TLK Prison",
+})
+
+
+local Misc = tab1.new("folder", {
+    text = "Misc",
+})
+
+
+local button1 = Misc.new("button", {
+    text = "Become ",
+})
+button1.event:Connect(function()
+    print("Escaped!")
+end)
+
+
+local dropdown1 = tab1.new("dropdown", {
+    text = "Gen Flashlights",
+})
+dropdown1.new("100")
+dropdown1.new("200")
+dropdown1.new("300")
+dropdown1.new("400")
+dropdown1.new("500")
+dropdown1.new("600")
+dropdown1.new("700")
+dropdown1.new("800")
+dropdown1.new("900")
+dropdown1.new("1000")
+dropdown1.event:Connect(function(amountL)
+    for i=1,amountL do
+	local tool = "Flashlight"
+	wait(.1)
+	fireclickdetector(game:GetService("Workspace").Flashlight.ClickDetector)
+	for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+	if v:IsA("Tool") and v.Name == tool then
+	v.Parent = game:GetService("Players").LocalPlayer.Character
+	end
+	end
+	end
+end)
+
+local dropdown2 = tab1.new("dropdown", {
+    text = "Gen Hamburgers",
+})
+dropdown2.new("100")
+dropdown2.new("200")
+dropdown2.new("300")
+dropdown2.new("400")
+dropdown2.new("500")
+dropdown2.new("600")
+dropdown2.new("700")
+dropdown2.new("800")
+dropdown2.new("900")
+dropdown2.new("1000")
+dropdown2.event:Connect(function(amountL)
+    for i=1,amountL do
+	local tool = "Hamburger"
+	wait(.1)
+	fireclickdetector(game:GetService("Workspace").Hamburger.ClickDetector)
+	for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+	if v:IsA("Tool") and v.Name == tool then
+	v.Parent = game:GetService("Players").LocalPlayer.Character
+	end
+	end
+	end
+end)
+
+
