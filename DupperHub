@@ -14,10 +14,10 @@ local tab1 = window1.new({
 
 
 local button1 = tab1.new("button", {
-    text = "Tp to TLK Prison",
+    text = "Copy TLK Prison link",
 })
 button1.event:Connect(function()
-    game:GetService("TeleportService"):Teleport(6933626061, LocalPlayer)
+    setclipboard(roblox.com/games/6933626061)
     print("Done!")
 end)
 
@@ -92,7 +92,7 @@ local button1 = tab2.new("button", {
     text = "Copy Doors But Rush link",
 })
 button1.event:Connect(function()
-setclipboard(text here)
+setclipboard(roblox.com/games/9291609587)
 print("Done!")
 end)
 
