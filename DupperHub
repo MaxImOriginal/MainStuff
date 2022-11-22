@@ -95,5 +95,30 @@ button1.event:Connect(function()
 setclipboard(roblox.com/games/9291609587)
 print("Done!")
 end)
+
+
+local dropdown1 = tab1.new("dropdown", {
+    text = "Gen Flashlights",
+})
+dropdown1.new("100")
+dropdown1.new("200")
+dropdown1.new("300")
+dropdown1.new("400")
+dropdown1.new("500")
+dropdown1.new("600")
+dropdown1.new("700")
+dropdown1.new("800")
+dropdown1.new("900")
+dropdown1.new("1000")
+dropdown1.event:Connect(function(amountL)
+    for i=1,amountL do
+for i = 1, amount do
+    local args = {
+        [1] = "Fake Bomb",
+        [2] = 0
+    }
+    game:GetService("Players").LocalPlayer.PlayerGui.Tienda.Frame.SkinsEvent:FireServer(unpack(args))
+
+end)
 window1.open()
 
