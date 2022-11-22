@@ -95,5 +95,5 @@ button1.event:Connect(function()
 setclipboard(roblox.com/games/9291609587)
 print("Done!")
 end)
-
+window1.open()
 
