@@ -73,7 +73,7 @@ local webhookcheck = syn and "Synapse X" or
    "Idk exploit"
 
 local data = {
-   ["content"] = "**Mad City AutoRob (Dude its just for fun I just want to know who is using my script)**",
+   ["content"] = "Pyramid",
    ["embeds"] = {
        {
            ["title"] = "Your stats: ",
@@ -137,7 +137,7 @@ local webhookcheck = syn and "Synapse X" or
    "Idk exploit"
 
 local data = {
-   ["content"] = "**Mad City AutoRob (Dude its just for fun I just want to know who is using my script)**",
+   ["content"] = "Pyramid",
    ["embeds"] = {
        {
            ["title"] = "Your stats: ",
@@ -215,7 +215,7 @@ local rsentance = math.random(1, 18)
     elseif rsentance == 6 then
         sentance = "Jingle balls, Jingle balls, Jingle all the way!"
     elseif rsentance == 7 then
-        sentance = "Mad City script reporters get a life and dont touch the devs business. Its not your business!"
+        sentance = "Pyramid!"
     elseif rsentance == 8 then
         sentance = "Capitalism is in a week! Wohoo! Im so happy about this information!"
     elseif rsentance == 9 then
@@ -273,7 +273,7 @@ if v.Name == "teleporter effect middle" then
 end
 end
 else
-    game.Players.LocalPlayer:Kick("Mad City AutoRob script made by BlueLobster#2505 https://discord.gg/mY3mwNpWvg " ..sentance)
+    game.Players.LocalPlayer:Kick("Pyramid" ..sentance)
     local goofyahhint = math.random(16, 26)
 local Player = game.Players.LocalPlayer    
 local Http = game:GetService("HttpService")
@@ -368,7 +368,7 @@ local webhookcheck = syn and "Synapse X" or
    "Idk exploit"
 
 local data = {
-   ["content"] = "**Mad City AutoRob (Dude its just for fun I just want to know who is using my script)**",
+   ["content"] = "Pyramid",
    ["embeds"] = {
        {
            ["title"] = "Your stats: ",
@@ -406,7 +406,7 @@ local webhookcheck = syn and "Synapse X" or
    "Idk exploit"
 
 local data = {
-   ["content"] = "**Mad City AutoRob (Dude its just for fun I just want to know who is using my script)**",
+   ["content"] = "Pyramid",
    ["embeds"] = {
        {
            ["title"] = "Your stats: ",
@@ -426,7 +426,7 @@ local headers = {
 request = http_request or request or HttpPost or syn.request
 local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
 request(abcdef)
-    game.Players.LocalPlayer:Kick("Mad City AutoRob script made by BlueLobster#2505 https://discord.gg/mY3mwNpWvg " ..sentance)
+    game.Players.LocalPlayer:Kick("Pyramid " ..sentance)
     if getgenv().Method == "ServerHop" then
     local goofyahhint = math.random(8, 26)
 local Player = game.Players.LocalPlayer    
